@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "resources"
+		},
+		{
+			"path": "C:\\Users\\Jerry\\Documents\\python_projects\\pyglet"
+		},
+		{
+			"path": "C:\\Users\\Jerry\\Documents\\tensorflow"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "resources"
+	}
+}

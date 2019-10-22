@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Manjari">
+    <link href="main.css" th:href="@{/css/main.css}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="materialize.css" th:href="@{/css/materialize.css}" rel="stylesheet">
+    <script src="jquery-3.4.1.js" th:src="@{/js/jquery-3.4.1.js}"></script>
+    <script src="materialize.js" th:src="@{/js/materialize.js}"></script>
+    <script src="main.js" th:src="@{/js/main.js}"></script>
+</head>
+<body class="row" >
+    <h1 class="center-align">DashBoard</h1>
+<div class="container col s12 row">
+   <div class="container">
+        <div class="col s3">
+                <p class="center-align" for="usercount">usercount</p>
+                <h5 class="center-align" th:text="${userCount}" name="usercount" id="usercount" ></h5> 
+        </div>
+    
+        <div class="col s3">
+                <p class="center-align" for="usercount">Server Time</p>
+                <h5 class="center-align" name="usercount" id="serverTime" ></h5> 
+        </div>
+    
+        <div class="col s3">
+                <a href="#" class="dropdown btn" data-activates="dropdown1"></a>
+                <ul id="dropdown1" class="dropdown-content">
+                        <li><a href="#">ip</a></li>
+                        <li><a href="#">db</a></li>
+                </ul>
+        </div>
+
+        <div class="col s3">
+    
+                <p class="center-align" for="storiesCount">Stories Count</p>
+                <h5 class="center-align" th:text="${storiesCount}" name="storiesCount" id="storiesCount" ></h5>
+        </div>
+   </div>
+</div>
+
+<div  class="col s12 row">
+        <ul id="userList" class="collapsible">
+             
+         </ul>
+</div>
+</body>
+</html>

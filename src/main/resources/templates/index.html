@@ -1,0 +1,133 @@
+<!DOCTYPE html >
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Manjari">
+    <link href="/css/main.css" th:href="@{/css/main.css}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/css/materialize.css"  th:href="@{/css/materialize.css}" rel="stylesheet">
+    <script src="/js/jquery-3.4.1.js" th:src="@{/js/jquery-3.4.1.js}"></script>
+    <script th:src="@{/js/materialize.js}"></script>
+    <script th:src="@{/js/main.js}"></script>
+    <script th:src="@{/js/autoUpdate.js}"></script>
+    <title>thedickensdev</title>
+</head>
+<body class="infoDiv lighten-1">
+        <div>
+                <nav class="nav-extended lighten-1">
+                        <div class="nav-wrapper">
+                          <a href="#" src="/icons/dickendevlogo.png" th:src="@{/icons/dickendevlogo.png}" class="brand-logo"></a>
+                          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                          <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="#">Home</a></li>
+                            <li><a th:href="@{/contact}" href="/contact">Contact</a></li>
+                            <li><a href="#">About</a></li>
+                          </ul>
+                        </div>
+                        <div class="nav-content">
+                          <ul class="tabs tabs-transparent">
+                              <li class="tab"><a href="#index">Information</a> </li>
+                            <li class="tab"><a href="#art">Art Gallery</a></li>
+                            <li class="tab"><a class="active" href="#games">Games</a></li>
+                            <li class="tab"><a href="#support">Support</a></li>
+                            <li class="tab"><a href="#videos">Videos</a></li>
+                          </ul>
+                        </div>
+                      </nav>
+                    
+                      <ul class="sidenav" id="mobile-demo">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">about</a></li>
+                      </ul>
+                     
+        </div>
+        <div class="infoDiv">
+            
+                <div id="index" class="center-align center infoDiv row col s12 lighten-3">
+                        <div>
+                            <div class="slider">
+                                <ul class="slides">
+                                    <li>
+                                        <img class="card-blur" src="/icons/background.jpg" alt="" srcset="">
+                                        <div class="caption">
+                                            <h1>Computer Enthusiast, Game Dev, Innovator</h1>
+                                            <h5>My lines no yet implemented</h5>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="slides">
+                                        <li>
+                                            <img class="card-blur" src="/icons/background.jpg" alt="" srcset="">
+                                            <div class="caption">
+                                                <h1>Still a hero</h1>
+                                                <h5>My lines no yet implemented</h5>
+                                            </div>
+                                        </li>
+                                    </ul>
+                            </div>
+                            
+                                <div class="card card-reveal">
+                                        <div class="card-image">
+                                            <img class="card-blur" th:src="@{/icons/background.jpg}" src="/icons/background.jpg">
+                                            <span class="card-title"><h2 class="darken-2 white-text">Computer Enthusiast, Game Dev, Innovator<h2></span>
+                                        </div>
+                                        <div class="card-content">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias molestiae dolorum maiores iste itaque ad necessitatibus libero mollitia deserunt consequuntur voluptatum adipisci ullam, sed, expedita minus provident autem dignissimos ab.</p>
+                                        </div>
+                                        <div class="card-action">
+                                            <a href="#">Read More</a>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="section"></div>
+                        <div>
+                                <div class="card card-reveal">
+                                        <div class="card-image">
+                                            <img class="card-blur" th:src="@{/icons/background.jpg}" src="/icons/background.jpg">
+                                            <span class="card-title"><h2 class="darken-2 white-text">Top Stories<h2></span>
+                                        </div>
+                                        <div class="card-content">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias molestiae dolorum maiores iste itaque ad necessitatibus libero mollitia deserunt consequuntur voluptatum adipisci ullam, sed, expedita minus provident autem dignissimos ab.</p>
+                                        </div>
+                                        <div class="card-action">
+                                            <a href="#">Read More</a>
+                                        </div>
+                                    </div>
+                        </div>
+                </div>   
+                        
+                <div id="art" class="container col s12">
+                    <h1 class=" center center-align lighten-3">Coming Soon!!!</h1>
+                    </div>
+                    <div id="support" class="row col s12">
+                            <h1 class="center-align center  lighten-3">Projects</h1>
+
+                                                
+                    </div>
+                    <div id="games" class="col container s12">
+                        <h1 class="center-align">My Current Projects</h1>
+                        <div>
+                            <ul id="ProjectList" class="collapsible">
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="videos" class="col s12"> 
+
+                    </div>
+                  
+        </div>
+        
+</body>
+
+<footer class="page-footer red">
+        <div class="footer-copyright">
+          <div class="container">
+          © 2019 all Copyrights are Reserved
+          </div>
+        </div>
+      </footer>
+</html>

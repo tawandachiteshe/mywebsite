@@ -1,0 +1,56 @@
+h{
+    font-family: 'Manjari', 'Roboto','Century Gothic';
+}
+
+p{
+    font-family: 'Manjari', Roboto, 'Century Gothic';
+}
+input{
+    font-family: 'Manjari','Roboto','Century Gothic';
+}
+.card-blur{
+  filter: blur(5px);
+}
+h1.infoHeader{
+    size: 42px;
+    align-self: center;
+}
+
+
+body {
+    font-family: 'Manjari', 'Roboto','Century Gothic';
+    display: flex-box;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  .input-field input[type=date]:focus + label,
+  .input-field input[type=text]:focus + label,
+  .input-field input[type=email]:focus + label,
+  .input-field input[type=password]:focus + label {
+    color: #e91e63;
+  }
+.background-image{
+  background-image: url('/icons/background.jpg');
+  filter: grayscale();
+  z-index: -1212;
+ 
+}
+.pading{
+  padding-left: 25px;
+}
+.zx{
+  z-index: 1231231;
+}
+  
+  .input-field input[type=date]:focus,
+  .input-field input[type=text]:focus,
+  .input-field input[type=email]:focus,
+  .input-field input[type=password]:focus {
+    border-bottom: 2px solid #e91e63;
+    box-shadow: none;
+  }

@@ -1,0 +1,22 @@
+app:
+  datasource:
+    jdbc-url:  jdbc:postgresql://localhost:5432/userdb
+    username: postgres
+    password: dick
+spring:
+  main:
+    allow-bean-definition-overriding: false
+  mail:
+    default-encoding: UTF-8
+    host: smtp.gmail.com
+    username: dickenstawanda@gmail.com
+    password: 18765432
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    protocol: smtp
+    test-connection: false
