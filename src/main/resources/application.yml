@@ -1,8 +1,8 @@
 app:
   datasource:
-    jdbc-url:  jdbc:postgresql://localhost:5432/userdb
-    username: postgres
-    password: dick
+    jdbc-url: ${JDBC_DATABASE_URL} #jdbc:postgresql://localhost:5432/userDb
+    username: ${JDBC_DATABASE_USERNAME}
+    password: ${JDBC_DATABASE_PASSWORD}
 spring:
   main:
     allow-bean-definition-overriding: false
