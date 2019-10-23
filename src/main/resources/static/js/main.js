@@ -20,7 +20,7 @@ $(document).ready(function(){
   });
   window.addEventListener("load",function(){
     this.console.log("hi");
-    loadGithubInfo();
+    
     postStory();
     setTimeout(postStory(),1000);
    getGihubData();
@@ -209,6 +209,7 @@ for (let i = 0; i< buttons.length; i++) {
             if(this.responseText !== null){
             console.log(request.responseText)
             localStorage.setItem("jsonGitResponse",request.responseText)
+                loadGithubInfo();
             }else{
 
              div[0].innerText = this.status
