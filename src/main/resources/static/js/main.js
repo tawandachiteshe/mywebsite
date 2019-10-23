@@ -23,7 +23,7 @@ $(document).ready(function(){
     loadGithubInfo();
     postStory();
     setTimeout(postStory(),1000);
-      getGithubData();
+   getGihubData();
     
   });
 function Reloading(){
@@ -201,8 +201,7 @@ for (let i = 0; i< buttons.length; i++) {
 
  function getGihubData (){
     var request = new XMLHttpRequest();
-  request.open("get","https://api.github.com/user/repos",true);
-  request.setRequestHeader("Authorization","token 77f2cd3364865d362a31dea0c0714525238835e0")
+ request.open("get",'https://api.github.com/users/tawandachiteshe/repos?client_id=e43c4c5068f0fc057adb&client_secret=bcf961aa817de1dbc64efa3d0b4fda58c472672a');
   request.onreadystatechange = function(){
   var div = document.getElementsByClassName("divHeader");
    if(request.readyState === this.DONE && this.status === 200){
