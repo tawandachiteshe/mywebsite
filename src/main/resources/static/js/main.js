@@ -23,6 +23,7 @@ $(document).ready(function(){
     loadGithubInfo();
     postStory();
     setTimeout(postStory(),1000);
+      getGithubData();
     
   });
 function Reloading(){
@@ -201,7 +202,7 @@ for (let i = 0; i< buttons.length; i++) {
  function getGihubData (){
     var request = new XMLHttpRequest();
   request.open("get","https://api.github.com/user/repos",true);
-  request.setRequestHeader("Authorization","token 281b9c37caa072691e3ff1424c84a7128e4e2922")
+  request.setRequestHeader("Authorization","token 77f2cd3364865d362a31dea0c0714525238835e0")
   request.onreadystatechange = function(){
   var div = document.getElementsByClassName("divHeader");
    if(request.readyState === this.DONE && this.status === 200){
